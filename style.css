@@ -1,0 +1,115 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f9fb;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #2a4365;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+/* Navigation */
+nav {
+    background: #24304a;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #90cdf4;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(36,48,74,0.07);
+    padding: 2rem;
+}
+
+/* Headings */
+h2, h3 {
+    color: #2a4365;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1.2rem;
+}
+
+/* Buttons */
+.button, button, input[type="submit"] {
+    background: #3182ce;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover {
+    background: #2b6cb0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #24304a;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.95rem;
+    }
+}
