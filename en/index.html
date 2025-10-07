@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamin SZUREK - Engineering student</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    #dynamic-text { color: #3182ce; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="../assets/picture/myself.jpg" alt="Benjamin's photo" class="profile-photo">
+    <h1>Benjamin SZUREK</h1>
+    <p>I’m a student in the engineering school<span id="dynamic-text">ESME</span> with a specialisation in AI.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="../index.html" style="color:#90cdf4;">FR</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <p>The English version of my website, still in progress </section>
+
+    <section id="projects" class="reveal">
+      <h2>My Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>My website</h3>
+          <p>My personal website (this one!) hosted on GitHub Pages.</p>
+        </div>
+        <div class="card">
+          <h3>Still in progress</h3>
+          <p>Still in progress</p>
+        </div>
+        <div class="card">
+          <h3>Still in progress</h3>
+          <p>Still in progress</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact Me</h2>
+      <p>📧 <a href="mailto:b3szurek@gmail.com">b3szurek@gmail.com</a></p>
+      <p>🌐 <a href="https://github.com/benjamin333sz" target="_blank">My GitHub</a></p>
+      <p>💼 <a href="https://www.linkedin.com/in/benjamin-szurek-348424221/" target="_blank">My LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Benjamin Dupont — All rights reserved.</p>
+  </footer>
+
+  <script>
+    const phrases = ["web developer", "creative", "curious", "self-driven"];
+    let i = 0;
+    setInterval(() => {
+      document.getElementById("dynamic-text").textContent = phrases[i];
+      i = (i + 1) % phrases.length;
+    }, 2000);
+
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      for (let r of reveals) {
+        const rect = r.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          r.classList.add("visible");
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,30 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamin SZUREK - Étudiant à l'ESME Sudria</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #dynamic-text { color: #3182ce; font-weight: 600; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>This is a basic website structure.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+  <header>
+    <img src="assets/picture/myself.jpg" alt="Photo de Benjamin" class="profile-photo">
+    <h1>Benjamin SZUREK</h1>
+    <p>Je suis étudiant à l'ESME Sudria pour devenir <span id="dynamic-text">Ingénieur généraliste</span> avec une spécialisation dans l'IA</p>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+      <a href="en/index.html" style="color:#90cdf4;">EN</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="reveal">
+      <h2>À propos de moi</h2>
+      <p>Jeune étudiant dynamique et curieux, je m'intéresse à tous les sujets scientifiques avec une préférence pour l'informatique. Je suis en troisième et dernière année du cycle d'ingénieur à l'ESME Sudria en majeur Intelligence Artificielle. <br>
+        Ce site est mon premier site web et il est encore en construction (et comme une oeuvre d'art, c'est difficile de déterminer quand dire l'oeuvre est fini...).<br>
+        Je n'ai absolument pas réalisé ce site de A à Z car nous avons des nouveaux outils IA permettant de facilier la création de site web. <br>
+        Oui, j'ai de la chance d'avoir accès à ces IA. <br> Oui, si je n'ai plus accès à ces IA, j'aurai beaucoup plus de mal à faire un site web et cela me prendra sans doute beaucoup plus de temps. <br> Non, je ne suis pas un "vrai" développeur web qui a bouffé des pages et des pages de codes. Désolé de vous décevoir mais c'est la triste réalité, je ne suis pas génie, je suis un être humain avec ses défauts et ses qualités.<br>
+        Bref... <br>
+        Il me reste beaucoup à apprendre et à découvrir comme nous tous.
+        "La vie n'est qu'un long apprentissage" après tout.
+</section>
+
+    <section id="projects" class="reveal">
+      <h2>Mes projets</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Site web</h3>
+          <p>Mon propre site personnel (Oui, celui-ci ! Je vous envoie sur le GitHub de cette <a href="https://github.com/benjamin333sz/website"></a>page</a>).</p>
+        </div>
+        <div class="card">
+          <h3>Lecture automatique de facture</h3>
+          <p>Mon projet réalisé en INGE 2 de lecture automatique de facture avec plusieurs types de modèles d'IA. Il recommande vivement un GPU pour lancer certains modèles tel que le LLM ollama. C'était un projet fort complet avec beaucoup d'expériences. Je vous mets notre rapport de projet <a href="assets/text/poster.pdf" target="_blank" class="button">ici</a>
+ et le lien vers le GitHub  <a href="https://github.com/benjamin333sz/Lecture_automatique_facture">ici</a></p>
+        </div>
+        <div class="card">
+          <h3>Application Green Team</h3>
+          <p>Une application de contact pour l'association Green Team de notre école. L'idée était que les étudiants postent leurs propositions d'améliorations pour réduire l'empreinte/la consommation énergétique de l'école. Nous étions allés très loin et on a même pu faire des tests directement sur nos téléphones ! (Je dis "on" car j'ai travaillé avec Darel Zouclanounon, il faut rendre à César ce qui est à César. Je vous revois sur son <a href="https://github.com/daryan052205">GitHub</a> et son <a href="https://www.linkedin.com/in/darel-zoclanclounon-3363b0221/">Linkedin</a>... Si je peux faire de la pub pour un copain.)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Me contacter</h2>
+      <p>📧 <a href="mailto:b3szurek@gmail.com">b3szurek@gmail.com</a></p>
+      <p>🌐 <a href="https://github.com/benjamin333sz" target="_blank">Mon GitHub</a></p>
+      <p>💼 <a href="https://www.linkedin.com/in/benjamin-szurek-348424221/" target="_blank">Mon LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2025 Benjamin SZUREK </p>
+  </footer>
+
+  <script>
+    // Texte dynamique
+    const phrases = ["Ingénieur ESME curieux et autonome", "Recherhe un stage de fin d'études", "Passionné par l'IA et l'informatique"];
+    let i = 0;
+    setInterval(() => {
+      document.getElementById("dynamic-text").textContent = phrases[i];
+      i = (i + 1) % phrases.length;
+    }, 2000);
+
+    // Apparition au scroll
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      for (let r of reveals) {
+        const rect = r.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          r.classList.add("visible");
+        }
+      }
+    });
+  </script>
 </body>
 </html>
