@@ -71,6 +71,9 @@ h2, h3 {
 /* Paragraphs */
 p {
     margin-bottom: 1.2rem;
+    text-align: justify;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
 }
 
 /* Buttons */

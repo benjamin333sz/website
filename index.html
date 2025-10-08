@@ -13,7 +13,8 @@
   <header>
     <img src="./assets/picture/myself.jpg" alt="Photo de Benjamin" class="profile-photo">
     <h1>Benjamin SZUREK</h1>
-    <p>Je suis étudiant à l'ESME Sudria pour devenir <span id="dynamic-text">Ingénieur généraliste</span> avec une spécialisation dans l'IA</p>
+    <p>Je suis étudiant à l'ESME Sudria pour devenir Ingénieur généraliste avec une spécialisation dans l'IA. <br>
+    <span id="dynamic-text">Ce que je suis :</span></p>
     <nav>
       <a href="#about">À propos</a>
       <a href="#projects">Projets</a>
@@ -39,16 +40,17 @@
       <div class="grid">
         <div class="card">
           <h3>Site web</h3>
-          <p>Mon propre site personnel (Oui, celui-ci ! Je vous envoie sur le GitHub de cette <a href="https://github.com/benjamin333sz/website">page</a>).</p>
+          <p>Mon propre site personnel (Oui, celui-ci ! Je vous renvoie sur le GitHub de cette <a href="https://github.com/benjamin333sz/website">page</a>).</p>
         </div>
         <div class="card">
           <h3>Lecture automatique de facture</h3>
-          <p>Mon projet réalisé en INGE 2 de lecture automatique de facture avec plusieurs types de modèles d'IA. Il recommande vivement un GPU pour lancer certains modèles tel que le LLM ollama. C'était un projet fort complet avec beaucoup d'expériences. Je vous mets notre poster <a href="./assets/text/poster.pdf">ici</a>, notre rapprot de projet <a href="./assets/text/PROJET_COMPUTER_VISION_SZUREK_KUSNIEREK_BEHR.pdf">là</a>,.
- et le lien vers le GitHub  <a href="https://github.com/benjamin333sz/Lecture_automatique_facture">ici</a></p>
+          <p>Mon projet réalisé en INGE 2 de lecture automatique de facture avec plusieurs types de modèles d'IA. Il recommande vivement un GPU pour lancer certains modèles tel que le LLM ollama. C'était un projet fort complet avec beaucoup d'expériences.
+            Je vous mets notre poster <a href="./assets/text/poster.pdf">ici</a>, notre rapport de projet <a href="./assets/text/PROJET_COMPUTER_VISION_SZUREK_KUSNIEREK_BEHR.pdf">là</a>,
+            et le lien vers le GitHub  <a href="https://github.com/benjamin333sz/Lecture_automatique_facture">ici</a></p>
         </div>
         <div class="card">
           <h3>Application Green Team</h3>
-          <p>Une application de contact pour l'association Green Team de notre école. L'idée était que les étudiants postent leurs propositions d'améliorations pour réduire l'empreinte/la consommation énergétique de l'école. Nous étions allés très loin et on a même pu faire des tests directement sur nos téléphones ! (Je dis "on" car j'ai travaillé avec Darel Zouclanounon, il faut rendre à César ce qui est à César. Je vous revois sur son <a href="https://github.com/daryan052205">GitHub</a> et son <a href="https://www.linkedin.com/in/darel-zoclanclounon-3363b0221/">Linkedin</a>... Si je peux faire de la pub pour un copain.)</p>
+          <p>Une application de contact pour l'association Green Team de notre école. L'idée était que les étudiants postent leurs propositions d'améliorations pour réduire l'empreinte/la consommation énergétique de l'école. Nous étions allés très loin dans le projet et on a même pu faire des tests directement sur nos téléphones ! (Je dis "on" car j'ai travaillé avec Darel Zouclanounon, il faut rendre à César ce qui est à César. Je vous revois sur son <a href="https://github.com/daryan052205">GitHub</a> et son <a href="https://www.linkedin.com/in/darel-zoclanclounon-3363b0221/">Linkedin</a>... Si je peux faire de la pub pour un copain.)</p>
         </div>
       </div>
     </section>
@@ -67,7 +69,7 @@
 
   <script>
     // Texte dynamique
-    const phrases = ["Ingénieur ESME curieux et autonome", "Recherhe un stage de fin d'études", "Passionné par l'IA et l'informatique"];
+    const phrases = ["Ingénieur ESME curieux et autonome", "Recherche un stage de fin d'études", "Passionné par l'IA et l'informatique"];
     let i = 0;
     setInterval(() => {
       document.getElementById("dynamic-text").textContent = phrases[i];

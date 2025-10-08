@@ -13,7 +13,9 @@
   <header>
     <img src="../assets/picture/myself.jpg" alt="Benjamin's photo" class="profile-photo">
     <h1>Benjamin SZUREK</h1>
-    <p>I’m a student in the engineering school<span id="dynamic-text">ESME</span> with a specialisation in AI.</p>
+    <p>I’m a student in the engineering school ESME with a specialisation in AI.
+      <span id="dynamic-text">What I am</span>
+    </p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -25,22 +27,27 @@
   <main>
     <section id="about" class="reveal">
       <h2>About Me</h2>
-      <p>The English version of my website, still in progress </section>
+      <p>Young student dynamic and curious, I am interested on every scientist subject </section>
 
     <section id="projects" class="reveal">
       <h2>My Projects</h2>
       <div class="grid">
         <div class="card">
           <h3>My website</h3>
-          <p>My personal website (this one!) hosted on GitHub Pages.</p>
+          <p>My personal website (Yes, this one!) hosted on GitHub Pages. You can access it <a href="https://github.com/benjamin333sz/website">here</a>)</p>
         </div>
         <div class="card">
-          <h3>Still in progress</h3>
-          <p>Still in progress</p>
+          <h3>Automatic invoice reading</h3>
+          <p>My project realised in INGE 2 about automaic invoice reading with different type of AI models. I strongly recommanded to use a GPU to run some model such as the LLM Ollama model
+            It was a very complete project with a lot of experiences. I put our poster in French <a href="./assets/text/poster.pdf">here</a>, our project report in French <a href="./assets/text/PROJET_COMPUTER_VISION_SZUREK_KUSNIEREK_BEHR.pdf">there</a>
+            (sorry but we didn't create an english version of our rapport). The link to the GitHub project  <a href="https://github.com/benjamin333sz/Lecture_automatique_facture">here</a>
+          </p>
         </div>
         <div class="card">
-          <h3>Still in progress</h3>
-          <p>Still in progress</p>
+          <h3>Green Team App</h3>
+          <p>An app for the association Green Team of our engineering school. The goal was that students post suggestions for improvements to reduce the footprint/energy consumption of the school. 
+           We had gone very far in the project and we even realised tests directly on our own phones ! (I say "we" because I worked with Darel Zouclanounon. This is his <a href="https://github.com/daryan052205">GitHub</a> and his <a href="https://www.linkedin.com/in/darel-zoclanclounon-3363b0221/">Linkedin</a>... if I can do some add for a friend.)
+          </p>
         </div>
       </div>
     </section>
@@ -54,11 +61,11 @@
   </main>
 
   <footer>
-    <p>© 2025 Benjamin Dupont — All rights reserved.</p>
+    <p>2025 Benjamin SZUREK</p>
   </footer>
 
   <script>
-    const phrases = ["web developer", "creative", "curious", "self-driven"];
+    const phrases = ["ESME Engineer curious and autonomous ", "Research an end-of-study Internship", "Passionate about AI and computer science"];
     let i = 0;
     setInterval(() => {
       document.getElementById("dynamic-text").textContent = phrases[i];
