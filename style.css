@@ -75,9 +75,14 @@ p {
     line-height: 1.7;
     letter-spacing: 0.02em;
 }
-header p {
-      text-align: center;
-    }
+
+
+.intro-dynamic { 
+    margin-top: 0.5rem; 
+    font-size: 1.1rem;
+    text-align: center;
+}
+
 
 /* Buttons */
 .button, button, input[type="submit"] {
