@@ -5,32 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Benjamin SZUREK - Étudiant à l'ESME Sudria</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      #dynamic-text {
-        color: #3182ce;
-        font-weight: 600;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <img
-        src="./assets/picture/myself.jpg"
-        alt="Photo de Benjamin"
-        class="profile-photo"
-      />
-      <h1>Benjamin SZUREK</h1>
-      <p class="intro-dynamic texte">
-        Je suis étudiant à l'ESME Sudria pour devenir Ingénieur généraliste avec
-        une spécialisation dans l'IA. <br />
-        <span id="dynamic-text">Ce que je suis :</span>
-      </p>
-      <nav>
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
-        <a href="en/index.html" style="color: #90cdf4">EN</a>
-      </nav>
+      <div class="header-content">
+        <img
+          src="./assets/picture/myself.jpg"
+          alt="Photo de Benjamin"
+          class="profile-photo"
+        />
+        <h1>Benjamin SZUREK</h1>
+        <p class="dynamic-text">
+          Étudiant à l'ESME Sudria, spécialisé en IA. <br />
+          <span id="dynamic-text">Ingénieur curieux</span>
+        </p>
+        <nav>
+          <a href="#about">À propos</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+          <a href="en/index.html" class="lang-switch">EN</a>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -38,19 +33,15 @@
         <h2>À propos de moi</h2>
         <p>
           Jeune étudiant dynamique et curieux, je m'intéresse à tous les sujets
-          scientifiques avec une préférence pour l'informatique. Je suis en
-          troisième et dernière année du cycle d'ingénieur à l'ESME Sudria en
-          majeur Intelligence Artificielle. <br />
-          Ce site est mon premier site web et il est encore en construction (et
-          comme une oeuvre d'art, c'est difficile de déterminer quand dire
-          l'oeuvre est fini...).<br />
-          Je n'ai absolument pas réalisé ce site de A à Z car j'ai à disposition
-          de nouveaux outils IA facilitant la création de ce type de site web.
-          Je suis désolé de vous décevoir mais je préfère être honnête.
-          Bref...<br />
-
-          Il me reste beaucoup à apprendre et à découvrir comme nous tous. "La
-          vie n'est qu'un long apprentissage" après tout.
+          scientifiques, avec une préférence pour l'informatique. Je suis en
+          troisième et dernière année du cycle d'ingénieur à l'ESME Sudria, avec
+          une spécialisation en Intelligence Artificielle.
+        </p>
+        <p>
+          Ce site est mon premier site web et il est encore en construction.
+          J'ai utilisé des outils d'IA pour m'aider dans sa création. Il me
+          reste encore beaucoup à apprendre et à découvrir, comme nous tous. "La
+          vie n'est qu'un long apprentissage."
         </p>
       </section>
 
@@ -58,47 +49,51 @@
         <h2>Mes projets</h2>
         <div class="grid">
           <div class="card">
-            <h3>Site web</h3>
+            <h3>Mon site web</h3>
             <p>
-              Mon propre site personnel (Oui, celui-ci ! Je vous renvoie sur le
-              GitHub de cette
-              <a href="https://github.com/benjamin333sz/website">page</a>).
+              Mon site personnel (Oui, celui-ci !) est hébergé sur GitHub Pages.
+              Accédez au projet
+              <a href="https://github.com/benjamin333sz/website" target="_blank"
+                >ici</a
+              >.
             </p>
           </div>
           <div class="card">
-            <h3>Lecture automatique de facture</h3>
+            <h3>Lecture automatique de factures</h3>
             <p>
-              Mon projet réalisé en INGE 2 de lecture automatique de facture
-              avec plusieurs types de modèles d'IA. Il recommande vivement un
-              GPU pour lancer certains modèles tel que le LLM ollama. C'était un
-              projet fort complet avec beaucoup d'expériences. Je vous mets
-              notre poster <a href="./assets/text/poster.pdf">ici</a>, notre
-              rapport de projet
+              Projet de lecture automatique de factures en INGE 2 utilisant
+              plusieurs modèles d'IA. Un GPU est recommandé pour certains
+              modèles. Poster
+              <a href="./assets/text/poster.pdf" target="_blank">ici</a>,
+              rapport
               <a
                 href="./assets/text/PROJET_COMPUTER_VISION_SZUREK_KUSNIEREK_BEHR.pdf"
-                >là</a
-              >, et le lien vers le GitHub
+                target="_blank"
+                >ici</a
+              >, GitHub
               <a
                 href="https://github.com/benjamin333sz/Lecture_automatique_facture"
+                target="_blank"
                 >ici</a
-              >
+              >.
             </p>
           </div>
           <div class="card">
             <h3>Application Green Team</h3>
             <p>
-              Une application de contact pour l'association Green Team de notre
-              école. L'idée était que les étudiants postent leurs propositions
-              d'améliorations pour réduire l'empreinte/la consommation
-              énergétique de l'école. Nous étions allés très loin dans le projet
-              et on a même pu faire des tests directement sur nos téléphones !
-              (Je dis "on" car j'ai travaillé avec Darel Zouclanounon. Je vous
-              renvoie sur son
-              <a href="https://github.com/daryan052205">GitHub</a> et son
+              Application pour l'association Green Team permettant aux étudiants
+              de proposer des améliorations pour réduire la consommation
+              énergétique de l'école. Projet réalisé avec Darel Zouclanounon (<a
+                href="https://github.com/daryan052205"
+                target="_blank"
+                >GitHub</a
+              >
+              /
               <a
                 href="https://www.linkedin.com/in/darel-zoclanclounon-3363b0221/"
-                >Linkedin</a
-              >... Si je peux faire de la pub pour un copain &#x1F606;)
+                target="_blank"
+                >LinkedIn</a
+              >).
             </p>
           </div>
         </div>
@@ -125,7 +120,7 @@
     </main>
 
     <footer>
-      <p>2025 Benjamin SZUREK</p>
+      <p>© 2025 Benjamin SZUREK</p>
     </footer>
 
     <script>
@@ -139,9 +134,9 @@
       setInterval(() => {
         document.getElementById("dynamic-text").textContent = phrases[i];
         i = (i + 1) % phrases.length;
-      }, 2000);
+      }, 2500);
 
-      // Apparition au scroll
+      // Animation scroll
       const reveals = document.querySelectorAll(".reveal");
       window.addEventListener("scroll", () => {
         for (let r of reveals) {

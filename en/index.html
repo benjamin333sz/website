@@ -3,53 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benjamin SZUREK - Engineering student</title>
+    <title>Benjamin SZUREK - Engineering Student</title>
     <link rel="stylesheet" href="../style.css" />
-    <style>
-      #dynamic-text {
-        color: #3182ce;
-        font-weight: 600;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <img
-        src="../assets/picture/myself.jpg"
-        alt="Benjamin's photo"
-        class="profile-photo"
-      />
-      <h1>Benjamin SZUREK</h1>
-      <p class="dynamic-text">
-        I’m a student in the engineering school ESME with a specialisation in
-        AI.
-        <span id="dynamic-text">What I am</span>
-      </p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="../index.html" style="color: #90cdf4">FR</a>
-      </nav>
+      <div class="header-content">
+        <img
+          src="../assets/picture/myself.jpg"
+          alt="Benjamin's photo"
+          class="profile-photo"
+        />
+        <h1>Benjamin SZUREK</h1>
+        <p class="dynamic-text">
+          I’m a student at ESME, specializing in AI.
+          <span id="dynamic-text">Curious Engineer</span>
+        </p>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="../index.html" class="lang-switch">FR</a>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section id="about" class="reveal">
         <h2>About Me</h2>
         <p>
-          Young student dynamic and curious, I am interested on every scientist
-          subject with a preference for computer science. I am in the third and
-          last year of the engineering cycle at ESME Sudria with a major in
-          Artificial Intelligence. <br />
-          This website is my first website and it is still under construction
-          (and like a piece of art, it's hard to determine when to say the work
-          is finished...).<br />
-          I absolutely not made this website from A to Z because I have at my
-          disposal new AI facilitating the creation of a website. I am sorry to
-          disappoint you but I prefer to be honnest. Anyway... <br />
-
-          There is still a lot for me to learn and discover like all of us.<br />
-          "Life is just a long learning process" after all.
+          I am a dynamic and curious student, passionate about all scientific
+          topics, especially computer science. I am in the third year of the
+          engineering program at ESME Sudria with a major in Artificial
+          Intelligence. This is my first website, still under construction, and
+          I’ve used AI tools to help build it.
+        </p>
+        <p>
+          There is always more to learn and discover. "Life is just a long
+          learning process."
         </p>
       </section>
 
@@ -57,48 +48,49 @@
         <h2>My Projects</h2>
         <div class="grid">
           <div class="card">
-            <h3>My website</h3>
+            <h3>My Website</h3>
             <p>
               My personal website (Yes, this one!) hosted on GitHub Pages. You
               can access it
-              <a href="https://github.com/benjamin333sz/website">here</a>.
+              <a href="https://github.com/benjamin333sz/website" target="_blank"
+                >here</a
+              >.
             </p>
           </div>
           <div class="card">
-            <h3>Automatic invoice reading</h3>
+            <h3>Automatic Invoice Reading</h3>
             <p>
-              My project realised in INGE 2 about automaic invoice reading with
-              different type of AI models. I strongly recommanded to use a GPU
-              to run some model such as the LLM Ollama model It was a very
-              complete project with a lot of experiences. I put our poster in
-              French <a href="./assets/text/poster.pdf">here</a>, our project
-              report in French
+              Project on automatic invoice reading using AI models. GPU is
+              recommended for some models. Poster
+              <a href="./assets/text/poster.pdf" target="_blank">here</a>,
+              report
               <a
                 href="./assets/text/PROJET_COMPUTER_VISION_SZUREK_KUSNIEREK_BEHR.pdf"
-                >there</a
-              >
-              (sorry but we didn't create an english version of our rapport).
-              The link to the GitHub project
+                target="_blank"
+                >here</a
+              >, GitHub
               <a
                 href="https://github.com/benjamin333sz/Lecture_automatique_facture"
+                target="_blank"
                 >here</a
-              >
+              >.
             </p>
           </div>
           <div class="card">
             <h3>Green Team App</h3>
             <p>
-              An app for the association Green Team of our engineering school.
-              The goal was that students post suggestions for improvements to
-              reduce the footprint/energy consumption of the school. We had gone
-              very far in the project and we even realised tests directly on our
-              own phones ! (I say "we" because I worked with Darel Zouclanounon.
-              This is his
-              <a href="https://github.com/daryan052205">GitHub</a> and his
+              App for the Green Team association to suggest ways to reduce
+              energy consumption. Collaborated with Darel Zouclanounon (<a
+                href="https://github.com/daryan052205"
+                target="_blank"
+                >GitHub</a
+              >
+              /
               <a
                 href="https://www.linkedin.com/in/darel-zoclanclounon-3363b0221/"
-                >Linkedin</a
-              >... if I can do a little publicity for a friend &#x1F606;)
+                target="_blank"
+                >LinkedIn</a
+              >).
             </p>
           </div>
         </div>
@@ -109,37 +101,37 @@
         <p>📧 <a href="mailto:b3szurek@gmail.com">b3szurek@gmail.com</a></p>
         <p>
           🌐
-          <a href="https://github.com/benjamin333sz" target="_blank"
-            >My GitHub</a
-          >
+          <a href="https://github.com/benjamin333sz" target="_blank">GitHub</a>
         </p>
         <p>
           💼
           <a
             href="https://www.linkedin.com/in/benjamin-szurek-348424221/"
             target="_blank"
-            >My LinkedIn</a
+            >LinkedIn</a
           >
         </p>
       </section>
     </main>
 
     <footer>
-      <p>2025 Benjamin SZUREK</p>
+      <p>© 2025 Benjamin SZUREK</p>
     </footer>
 
     <script>
+      // Dynamic Text
       const phrases = [
-        "ESME Engineer curious and autonomous ",
-        "Research an end-of-study Internship",
+        "ESME Engineer curious and autonomous",
+        "Looking for an end-of-study Internship",
         "Passionate about AI and computer science",
       ];
       let i = 0;
       setInterval(() => {
         document.getElementById("dynamic-text").textContent = phrases[i];
         i = (i + 1) % phrases.length;
-      }, 2000);
+      }, 2500);
 
+      // Scroll Reveal
       const reveals = document.querySelectorAll(".reveal");
       window.addEventListener("scroll", () => {
         for (let r of reveals) {
